@@ -2,6 +2,8 @@
 
 
 
+We tested the diataxis doc bot on the follow 23 randomly selected document files(from openEuler's docs):
+
 | Tested document file | Num blocks | Num correct | Incorrect reason |
 | ---- | ---- | ---- | ---- |
 | docker_engine/refactor/image-management-1.md|3|3||
@@ -29,3 +31,12 @@
 | isulad+k8s/refactor/overview.md|3|3||
 | Total |127|106|Ratio on correctness: 83.46%|
 
+
+
+## How is the result labeled?
+
+Within each refactored document, we mark the blocks by a single line of repeated dashes, following the "dash line" is the artificial check result on is the categorization of the block correct, if not correct, why it's wrong(tell the reason as much as possible). The python code read the checks and print the statistics of the above table.
+
+
+
+> Notice that the LLM might produce different result as each time run, so the final correctness ratio might vary(but should within a small range).
