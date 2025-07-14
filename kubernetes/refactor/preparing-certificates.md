@@ -20,7 +20,8 @@
 # 改进后的结果
 
 ## 指南（How-to guides）
-
+------------------------------------------------------------------------------------------------------------------------------------
+1 正确
 # 证书生成指南
 
 ## 环境准备
@@ -52,7 +53,6 @@
     ```bash
     go version
     ```
-
 ### 编译安装 CFSSL
 
 编译安装 CFSSL 的参考命令如下（需要互联网下载权限，需要配置代理的请先完成配置，需要配置 go语言环境）:
@@ -72,7 +72,8 @@ $ make -j6
 1. 创建 CSR 配置文件
 2. 使用 cfssl 生成证书
 3. 验证生成结果
-
+------------------------------------------------------------------------------------------------------------------------------------
+2 正确
 ## 生成根证书
 
 ### 配置文件
@@ -134,7 +135,8 @@ $ cfssl gencert -initca ca-csr.json | cfssljson -bare ca
 ```bash
 ca.csr  ca-key.pem  ca.pem
 ```
-
+------------------------------------------------------------------------------------------------------------------------------------
+3 正确
 ## 生成组件证书
 
 [生成 admin 帐户证书](#生成-admin-帐户证书) | [生成 service-account 证书](#生成-service-account-帐户证书) | [生成 kube-controller-manager 证书](#生成-kube-controller-manager-组件证书) | [生成 kube-proxy 证书](#生成-kube-proxy-证书) | [生成 kube-scheduler 证书](#生成-kube-scheduler-证书)
@@ -174,7 +176,9 @@ $ cfssl gencert -ca=ca.pem -ca-key=ca-key.pem -config=ca-config.json -profile=ku
 ```bash
 admin.csr  admin-key.pem  admin.pem
 ```
+------------------------------------------------------------------------------------------------------------------------------------
 
+4 正确
 ### 生成 service-account 帐户证书
 
 #### CSR 配置
@@ -210,7 +214,8 @@ $ cfssl gencert -ca=../ca/ca.pem -ca-key=../ca/ca-key.pem -config=../ca/ca-confi
 ```bash
 service-account.csr  service-account-key.pem  service-account.pem
 ```
-
+------------------------------------------------------------------------------------------------------------------------------------
+5 正确
 ### 生成 kube-controller-manager 组件证书
 
 #### CSR 配置
@@ -245,7 +250,8 @@ $ cfssl gencert -ca=../ca/ca.pem -ca-key=../ca/ca-key.pem -config=../ca/ca-confi
 ```bash
 kube-controller-manager.csr  kube-controller-manager-key.pem  kube-controller-manager.pem
 ```
-
+------------------------------------------------------------------------------------------------------------------------------------
+6 正确
 ### 生成 kube-proxy 证书
 
 #### CSR 配置
@@ -280,7 +286,8 @@ $ cfssl gencert -ca=../ca/ca.pem -ca-key=../ca/ca-key.pem -config=../ca/ca-confi
 ```bash
 kube-proxy.csr  kube-proxy-key.pem  kube-proxy.pem
 ```
-
+------------------------------------------------------------------------------------------------------------------------------------
+7 正确
 ### 生成 kube-scheduler 证书
 
 #### CSR 配置
@@ -315,7 +322,8 @@ $ cfssl gencert -ca=../ca/ca.pem -ca-key=../ca/ca-key.pem -config=../ca/ca-confi
 ```bash
 kube-scheduler.csr  kube-scheduler-key.pem  kube-scheduler.pem
 ```
-
+------------------------------------------------------------------------------------------------------------------------------------
+8 正确
 ## 生成 kubelet 证书
 
 ### 批量生成脚本
@@ -390,7 +398,8 @@ $ cat k8snode1-csr.json
 ```
 
 > 注意：由于每个 node 所属的帐户组为 `system:node`，因此 CSR 的 CN 字段都为 `system:node` 加上`hostname`。
-
+------------------------------------------------------------------------------------------------------------------------------------
+9 正确
 ## 生成 kube-apiserver 证书
 
 ### CSR 配置
@@ -428,7 +437,8 @@ kubernetes.csr  kubernetes-key.pem  kubernetes.pem
 ```
 
 > *说明：10.32.0.1 是内部 services 使用的 IP 地址区间，可以设置为其他值，后面启动 apiserver 服务时，会设置该参数。*
-
+------------------------------------------------------------------------------------------------------------------------------------
+10 正确
 ## 生成 etcd 证书（可选）
 
 ### 部署方式说明
