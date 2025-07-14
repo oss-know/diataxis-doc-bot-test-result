@@ -139,7 +139,7 @@ $ chown "$(id -u)":"$(id -g)" "$HOME"/.kube/config
 $ export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
 ------------------------------------------------------------------------------------------------------------------------------------
-8 正确
+8 错误 原文内容丢失
 #### 部署flannel
 ```bash
 $ kubectl apply -f kube-flannel.yml

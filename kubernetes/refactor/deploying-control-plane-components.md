@@ -87,7 +87,7 @@ EOF
 # api-server启动配置 --encryption-provider-config=/etc/kubernetes/pki/encryption-config.yaml
 ```
 ------------------------------------------------------------------------------------------------------------------------------------
-7
+7 正确
 ### 拷贝证书
 [准备证书目录](#拷贝证书)
 ```bash
@@ -100,7 +100,7 @@ ca-key.pem     kube-controller-manager.kubeconfig  kube-proxy.pem         kube-s
 ca.pem         kube-controller-manager.pem         kubernetes-key.pem     kube-scheduler.pem
 ```
 ------------------------------------------------------------------------------------------------------------------------------------
-8
+8 正确
 ### 部署 admin 角色的 RBAC
 [创建和绑定 admin role](#部署-admin-角色的-rbac)
 ```bash
