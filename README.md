@@ -45,7 +45,7 @@ This is how the categorizations are marked in the refactored document:
 
 ![small block correct category](images/small_block_correct_categorization.png)
 
-Notice that the "dashed line" might be rendered by the markdown engine as a single line(the style might be different), this is a much larger block:
+Notice that the "dashes line" might be rendered by the markdown engine as a single line(the style might be different), this is a much larger block:
 
 ### Large block, correct category
 
