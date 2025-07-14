@@ -39,4 +39,31 @@ Within each refactored document, we mark the blocks by a single line of repeated
 
 
 
-> Notice that the LLM might produce different result as each time run, so the final correctness ratio might vary(but should within a small range).
+This is how the categorizations are marked in the refactored document:
+
+### Small block, correct category
+
+![small block correct category](images/small_block_correct_categorization.png)
+
+Notice that the "dashed line" might be rendered by the markdown engine as a single line(the style might be different), this is a much larger block:
+
+### Large block, correct category
+
+![large block correct category](images/large_block_correct_categorization.png)
+
+
+
+If something goes wrong, we'll mark it and give the reason(as much as possible):
+
+
+
+### Incorrect categorization
+![large block correct category](images/incorrect_categorization.png)
+
+
+
+## Finally, the result might be different!
+
+
+
+Notice that the LLM might produce different result as each time run, so the final correctness ratio might vary(but should within a small range).
