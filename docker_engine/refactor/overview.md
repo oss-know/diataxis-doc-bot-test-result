@@ -1,0 +1,36 @@
+# 可拆分成的文档类型
+
+解释（Explanations）
+
+# 修改理由和意见
+
+原文属于典型的解释型文档特征：
+1. 采用比喻方式解释Docker本质（码头工人与集装箱）
+2. 阐述技术原理和核心价值（Linux Container技术、一次构建到处运行）
+3. 说明技术特点而非操作步骤
+4. 包含注意事项而非具体操作指南
+
+不符合教程/指南/参考文档的特征：
+- 缺乏分步教学结构（教程）
+- 没有具体操作步骤（指南）
+- 无参数配置表格或API说明（参考）
+
+# 改进后的结果
+
+## 教程（Tutorials）
+
+## 指南（How-to guides）
+
+## 参考（Reference）
+
+## 解释（Explanations）
+
+# Docker容器
+
+Docker是一个开源的Linux容器引擎项目，用以实现应用的快速打包、部署和交付。Docker的英文本意是码头工人，码头工人的工作就是将商品打包到container（集装箱）并且搬运container、装载container。对应到Linux中，Docker就是将app打包到container，通过container实现app在各种平台上的部署、运行。Docker通过Linux Container技术将app变成一个标准化的、可移植的、自管理的组件，从而实现应用的"一次构建，到处运行"。
+
+Docker技术特点就是：应用快速发布、部署简单、管理方便，应用密度更高。
+
+> [!NOTE]说明
+>
+> Docker容器的安装和使用需要root权限。
