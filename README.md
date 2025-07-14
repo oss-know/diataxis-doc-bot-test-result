@@ -2,7 +2,7 @@
 
 
 
-We tested the diataxis doc bot on the follow 23 randomly selected document files(from openEuler's docs):
+We tested the diataxis doc bot on the following 23 randomly selected markdown document files(from [openEuler's docs](https://gitee.com/openeuler/docs.git)):
 
 | Tested document file | Num blocks | Num correct | Incorrect reason |
 | ---- | ---- | ---- | ---- |
