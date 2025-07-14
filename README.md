@@ -66,4 +66,4 @@ If something goes wrong, we'll mark it and give the reason(as much as possible):
 
 
 
-Notice that the LLM might produce different result as each time run, so the final correctness ratio might vary(but should within a small range).
+Notice that the LLM might produce different result as each time run, so the final correctness ratio might vary(but should be within a small range).
